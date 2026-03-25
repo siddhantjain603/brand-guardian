@@ -1,0 +1,64 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+*.pyd
+build/
+dist/
+wheels/
+*.egg-info/
+.Python
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Virtual environments
+.venv
+venv/
+ENV/
+env/
+
+# Temporary video files (created by yt-dlp during testing/auditing)
+temp_audit_video.mp4
+*.mp4
+*.mov
+*.avi
+*.mkv
+
+# IDE/Editor files
+.vscode/
+.idea/
+*.code-workspace
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+.AppleDouble/
+.LSOverride
+
+# Testing & Coverage
+.pytest_cache/
+.coverage
+htmlcov/
+*.cover
+coverage.xml
+
+# LangChain/LangSmith cache
+.langchain_cache/
+.langsmith/
+
+# Azure-related
+.azure/
+*.publishsettings
+*.pfx
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# macOS
+._*
+.Spotlight-V100
+.Trashes

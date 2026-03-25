@@ -1,0 +1,33 @@
+Steps to install uv and initialize the project on windows:
+1. use git bash
+2. Download using this command: curl -LsSf https://astral.sh/uv/install.sh | sh
+3. Use uv init --app
+4. if uv command not found, use this command "export PATH=$HOME/.local/bin:$PATH"
+
+Packages installed using cmd:
+uv add azure-identity azure-monitor-opentelemetry azure-search-documents azure-storage-blob fastapi firecrawl-py langchain langchain-community langchain-openai langgraph langsmith opentelemetry-instrumentation-fastapi pandas psycopg2-binary pydantic pypdf python-dotenv redis requests sqlalchemy streamlit uvicorn yt-dlp
+
+After packages installed you can see in pyproject.toml and use this command
+uv sync
+
+# Azure storage details
+Subscription Azure subscription 1
+Resource group brand-guardian-project
+Location East US
+Storage account name bgstorage603
+Preferred storage type Performance Standard
+Replication Read-access geo-redundant storage (RA-GRS)
+
+# Azure OpenAI Endpoint
+Keep till .com and remove the remaining endpoint url
+
+# Azure AI search
+change pricing tier from standard to free
+
+# Azure AI Indexer
+Use same storage account while creating ai video indexer resource which we created earlier
+Assign a manged identity role
+(Required) Click on Access Control -> Add assignment role -> Choose Video Indexer Account Contributor -> Select members -> Select your email id
+
+# Azure CLi login command
+az login --tenant <tenant-id> --use-device-code
